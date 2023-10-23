@@ -29,30 +29,37 @@
             <legend>Let's do this!</legend>
             <div class="firstname">
               <label for="firstname">FIRST NAME</label>
-              <input type="text" id="firstname" />
+              <input type="text" id="firstname" class="focus" />
             </div>
             <div class="lastname">
               <label for="lastname">LAST NAME</label>
-              <input type="text" id="lastname" />
+              <input type="text" id="lastname" class="focus" />
             </div>
             <div class="email">
               <label for="email">EMAIL</label>
-              <input type="email" id="email" />
+              <input type="email" id="email" class="focus" />
             </div>
             <div class="phone">
               <label for="phonenumber">PHONE NUMBER</label>
-              <input type="number" id="phonenumber" />
+              <input
+                class="focus"
+                type="tel"
+                id="phonenumber"
+                placeholder="+54(351)597314"
+              />
             </div>
             <div class="password">
               <label for="password">PASSWORD</label>
               <input type="password" id="password" />
+              <div class="error">*Password needs 8 characters</div>
             </div>
             <div class="confirm">
-              <label for="confirmp">CONFIRM PASSWORD</label>
+              <label for="confirm">CONFIRM PASSWORD</label>
               <input type="password" id="confirm" />
+              <div class="error">*Passwords do not match</div>
             </div>
+            <button class="boton" type="submit">Create account</button>
           </fieldset>
-          <button type="submit">Create account</button>
         </form>
       </div>
     </div>

@@ -59,14 +59,39 @@ form {
   background-color: white;
   padding-top: 15px;
 }
+
 .field1 {
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   border: none;
-  gap: 5%;
-  padding: 10px 15%;
+  gap: 20px 40px;
+  padding: 10px 30% 10px 10%;
 }
 .field1 div {
   display: flex;
   flex-direction: column;
+}
+.boton {
+  border: none;
+  border-radius: 10px;
+  padding: 17px 35px;
+  background-color: #596d48;
+  color: white;
+}
+.boton:hover {
+  cursor: pointer;
+  opacity: 0.95;
+}
+.field1 input {
+  border: 2px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 2px;
+}
+input:focus {
+  outline: none;
+}
+.focus:focus {
+  border: 2px solid blue;
+  box-shadow: 2px 2px 2px 1px rgba(0, 26, 255, 0.2);
 }
