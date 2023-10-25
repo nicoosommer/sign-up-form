@@ -10,7 +10,7 @@
     <div class="left">
       <div class="title">
         <img class="logo" src="odinlogo.png" alt="Logo" />
-        <h1>TITLE</h1>
+        <h1>MY FORM</h1>
       </div>
     </div>
     <div class="rigth">
@@ -50,18 +50,19 @@
             </div>
             <div class="password">
               <label for="password">PASSWORD</label>
-              <input type="password" id="password" />
-              <div class="error">*Password needs 8 characters</div>
+              <input type="password" id="password" required minlength="8" />
+              <div class="mostrar">*Password needs 8 characters</div>
             </div>
             <div class="confirm">
               <label for="confirm">CONFIRM PASSWORD</label>
-              <input type="password" id="confirm" />
-              <div class="error">*Passwords do not match</div>
+              <input type="password" id="confirm" required minlength="8" />
+              <div class="mostrar">*Passwords do not match</div>
             </div>
             <button class="boton" type="submit">Create account</button>
           </fieldset>
         </form>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
