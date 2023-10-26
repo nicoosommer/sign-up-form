@@ -95,11 +95,28 @@ input:focus {
   border: 2px solid blue;
   box-shadow: 2px 2px 2px 1px rgba(0, 26, 255, 0.2);
 }
-#password:invalid,
-#confirm:invalid {
+.password .error,
+.confirm .error {
   border: 2px solid red;
   box-shadow: 2px 2px 2px 1px rgba(182, 24, 13, 0.2);
 }
+.mostrar {
+  color: red;
+  font-size: smaller;
+}
 .esconder {
   visibility: hidden;
+}
+.seccionboton {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.seccionboton span {
+  font-size: smaller;
+}
+.seccionboton span a {
+  color: #596d48;
+  font-size: medium;
+  text-decoration: none;
 }

@@ -24,10 +24,10 @@
         </div>
       </div>
       <div class="lower">
-        <form action="#" method="post">
+        <form action="#" method="post" onsubmit="return enviar();">
           <fieldset class="field1">
             <legend>Let's do this!</legend>
-            <div class="firstname">
+            <div class="firstname notpass">
               <label for="firstname">FIRST NAME</label>
               <input type="text" id="firstname" class="focus" />
             </div>
@@ -50,15 +50,30 @@
             </div>
             <div class="password">
               <label for="password">PASSWORD</label>
-              <input type="password" id="password" required minlength="8" />
+              <input
+                class="error"
+                type="password"
+                id="password"
+                required
+                minlength="8"
+              />
               <div class="mostrar">*Password needs 8 characters</div>
             </div>
             <div class="confirm">
               <label for="confirm">CONFIRM PASSWORD</label>
-              <input type="password" id="confirm" required minlength="8" />
+              <input
+                class="error"
+                type="password"
+                id="confirm"
+                required
+                minlength="8"
+              />
               <div class="mostrar">*Passwords do not match</div>
             </div>
-            <button class="boton" type="submit">Create account</button>
+            <div class="seccionboton">
+              <button class="boton" type="submit">Create account</button>
+              <span>Already have an account? <a href="#">Log-in</a></span>
+            </div>
           </fieldset>
         </form>
       </div>
